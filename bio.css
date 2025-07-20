@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; /* Corrigido de "hv" para "vh" */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Melhor para mobile */
+    background-color: #f1f1f1;
+    color: black;
+    background-image: radial-gradient(#d6d6d6 1px, transparent 1px);
+    background-size: 20px 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+.txtDestaque {
+    color: aquamarine;
+}
+
+img {
+    border-radius: 30px;
+    background-color: #22D4FD;
+    padding: 10px;
+}
+
+.apresentacao {
+    margin: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    font-family: "Krona One", sans-serif;
+}
+
+.apresentacao__titulo {
+    font-size: 36px;
+}
+
+.texto {
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imagem-kauazinho {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.volte-conteiner {
+    margin: 40px;
+    transform: scale(3);
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.volte-conteiner:hover {
+    color: black;
+    transform: scale(1.3);
+}
+
+@media (max-width: 1024px) {
+    .apresentacao {
+        flex-direction: column;
+        margin: 5% 10%;
+        text-align: center;
+    }
+
+    .apresentacao__conteudo {
+        width: 100%;
+    }
+
+    .imagem-kauazinho {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .volte-conteiner {
+        transform: scale(2);
+        margin: 20px auto;
+    }
+
+    .apresentacao__titulo {
+        font-size: 30px;
+    }
+
+    .texto {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .apresentacao__titulo {
+        font-size: 26px;
+    }
+
+    .texto {
+        font-size: 16px;
+    }
+
+    .volte-conteiner {
+        transform: scale(1.5);
+    }
+
+    .imagem-kauazinho {
+        max-width: 90%;
+    }
+
+    .links {
+        font-size: 0.95rem;
+    }
+}
