@@ -7,12 +7,12 @@
 }
 
 body {
-    height: 100vh; /* Corrigido de "hv" para "vh" */
+    height: 100vh; 
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Melhor para mobile */
+    flex-direction: column; 
     background-color: #f1f1f1;
     color: black;
     background-image: radial-gradient(#d6d6d6 1px, transparent 1px);
@@ -71,14 +71,6 @@ img {
     object-fit: cover;
 }
 
-.volte-conteiner {
-    margin: 40px;
-    transform: scale(3);
-    display: inline-block;
-    color: black;
-    cursor: pointer;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
 
 .volte-conteiner:hover {
     color: black;
