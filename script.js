@@ -10,7 +10,7 @@ function digitar() {
 }
 digitar();
 
-window.addEventListener("scroll", function () {
+window.addEventListener("load", function () {
   const elementos = document.querySelectorAll(".reveal");
   elementos.forEach((el) => {
     const posicao = el.getBoundingClientRect().top;
